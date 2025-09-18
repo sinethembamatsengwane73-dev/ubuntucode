@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — UbuntuCode</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- URL-encoded filename so GitHub serves it correctly -->
+        <img src="assets/ubuntucode-logo.png" alt="UbuntuCode logo">
+        <div>
+          <h1>UbuntuCode</h1>
+          <p style="margin:0;color:#C7CEE0;font-size:12px">Technology Rooted in Ubuntu, Built for the World</p>
+        </div>
+      </div>
+
+      <!-- Hamburger for mobile menu -->
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="mailto:info@ubuntucode.africa?subject=Free%20Quote">Free Quote</a>
+      </nav>
+    </div>
+
+    <div class="social-strip">
+      <div class="container social-row">
+        <div class="social-left">
+          <span><i class="fa-solid fa-phone"></i> +27 71 763 1381</span>
+          <span><i class="fa-solid fa-envelope"></i> info@ubuntucode.africa</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/19jbU1xxwh/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/ubuntucodeza?igsh=MXRiMDFrOXV3ZHU4cw%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://lite.tiktok.com/t/ZMHGwC9r4KRgw-x2sCY/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/27717631381" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:info@ubuntucode.africa" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- paste header here -->
+
+  <main class="container">
+    <section class="section reveal">
+      <h3>Our Story</h3>
+      <div class="card">
+        <p>UbuntuCode was born in KwaZulu-Natal with a simple belief: Technology should serve people first. Founded while I’m in my second year studying Applied Mathematics and Mathematics at university, UbuntuCode blends rigorous problem-solving with a deep sense of community. We started by helping local businesses get online—fast, secure websites, clear branding, and practical SEO—and grew into a partner that handles hosting, maintenance, and compliance too. The name “Ubuntu” guides how we work: transparent, reliable, and collaborative. Every project is an opportunity to turn complex ideas into useful tools that help clients start, grow, and scale. We’re young, focused, and hungry to deliver measurable results—rooted in KZN, building for the world. </p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h3>Mission & Vision</h3>
+      <div class="grid">
+        <div class="card"><h4>Mission</h4><p>Empower SMEs with world-class web, SEO and IT that is affordable, reliable and measurable.</p></div>
+        <div class="card"><h4>Vision</h4><p>Be the most trusted partner for digital growth in KZN, rooted in Ubuntu and built for the world.</p></div>
+        <div class="card"><h4>Values</h4><ul class="features"><li>Ubuntu — people first</li><li>Trust & reliability</li><li>Innovation with purpose</li><li>Excellence in delivery</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h3>Business Profile</h3>
+      <table class="table">
+        <tr><th>Registered Name</th><td>UbuntuCode (PTY) LTD</td></tr>
+        <tr><th>Location</th><td>KwaZulu-Natal, South Africa</td></tr>
+        <tr><th>Services</th><td>Web & App Development, SEO, Digital Marketing, IT Maintenance, Business Registration, Hosting & Email</td></tr>
+        <tr><th>Support</th><td>24h Response SLA • WhatsApp: +27 71 763 1381 • Email: info@ubuntucode.africa</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <!-- Minimal modal required by openModal()/closeModal() used in script.js -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <h3 id="modalTitle" style="margin-top:0">Message</h3>
+      <p id="modalMsg"></p>
+      <button class="btn" onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footgrid">
+      <div>
+        <div class="badges">
+          <span class="badge">SSL Secure</span>
+          <span class="badge">SA Registered Business</span>
+          <span class="badge">24h Response SLA</span>
+        </div>
+        <p class="fine">© UbuntuCode (PTY) LTD — KwaZulu-Natal, South Africa</p>
+      </div>
+      <div>
+        <a class="cta" href="https://wa.me/27649471385" target="_blank">WhatsApp Chat</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- libs + site scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- floating WhatsApp -->
+  <a href="https://wa.me/27649471385" target="_blank" aria-label="WhatsApp" class="floating-wa">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- paste footer here -->
+</body>
+</html>
